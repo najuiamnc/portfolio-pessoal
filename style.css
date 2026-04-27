@@ -837,7 +837,7 @@ main .sobre {
     border-radius: 4px;
 }
 
-.projects a {
+.projects > a {
     background-color: #222;
     text-decoration: none;
     padding: 20px 40px;
@@ -845,6 +845,20 @@ main .sobre {
     border-radius: 3px;
     color: #707070;
     border: 1px solid #333;
+}
+
+.projects_armazenamento ul li a {
+    display: block;
+    outline: none;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.projects_armazenamento ul li a img {
+    display: block;
+    border: none;
+    outline: none;
 }
 
 
