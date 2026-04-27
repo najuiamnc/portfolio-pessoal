@@ -1233,3 +1233,28 @@ header {
   section, #contact, #pricing { padding-left: 15px !important; padding-right: 15px !important; }
   #contact form input, #contact form textarea, #contact form button { width: 100%; box-sizing: border-box; }
 }
+/* =========================================
+   CORREÇÕES FINAIS - FUN FACTS (n apagar isso) 
+   ========================================= */
+
+.funfacts ul li span {
+    margin: 0 !important;
+    display: block !important;
+}
+
+.funfacts ul li p {
+    margin: 0 !important;
+    font-size: 0.8rem !important; 
+    line-height: 1.2 !important;
+}
+
+/* Ajuste exclusivo para Mobile */
+@media (max-width: 768px) {
+    .funfacts ul li {
+        width: 100% !important;
+        max-width: 160px !important;
+        height: auto !important; 
+        min-height: 85px !important; 
+        padding-bottom: 10px !important;
+    }
+}
