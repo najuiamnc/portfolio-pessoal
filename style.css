@@ -1156,3 +1156,13 @@ footer .footer_comercial {
     font-size: 22px;
   }
 }
+.projects_armazenamento ul li a {
+    display: block;
+    outline: none;
+}
+
+.projects_armazenamento ul li a img {
+    display: block;
+    border: none;
+    outline: none;
+}
