@@ -1198,14 +1198,23 @@ header {
 }
 body {
     padding-top: 60px;
+
+}
+/* ===== FIX iOS / OVERFLOW HORIZONTAL ===== */
+html {
+  overflow-x: hidden; /* resolve o corte no iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
-/* ===== FIX iOS / OVERFLOW HORIZONTAL ===== */
-
-html {
+.wrapper, .site-container {
+  width: 100%;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
+/* Não mexer no body já tem max-width: 1200px lá em cima */
+
+/* Header fixo ocupando toda a tela */
 header {
   position: fixed;
   top: 0;
@@ -1217,23 +1226,10 @@ header {
   transform: none;
 }
 
+/* Reset básico para mobile (mantido do seu snippet) */
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr !important;
-    padding: 0 15px;
-  }
-  .filter-buttons {
-    padding: 0 15px;
-    justify-content: flex-start;
-  }
-  section, #contact, #pricing {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  #contact form input,
-  #contact form textarea,
-  #contact form button {
-    width: 100%;
-    box-sizing: border-box;
-  }
+  .projects-grid { grid-template-columns: 1fr !important; padding: 0 15px; }
+  .filter-buttons { padding: 0 15px; justify-content: flex-start; }
+  section, #contact, #pricing { padding-left: 15px !important; padding-right: 15px !important; }
+  #contact form input, #contact form textarea, #contact form button { width: 100%; box-sizing: border-box; }
 }
