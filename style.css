@@ -1199,3 +1199,41 @@ header {
 body {
     padding-top: 60px;
 }
+
+/* ===== FIX iOS / OVERFLOW HORIZONTAL ===== */
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1000;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 15px;
+  }
+  .filter-buttons {
+    padding: 0 15px;
+    justify-content: flex-start;
+  }
+  section, #contact, #pricing {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  #contact form input,
+  #contact form textarea,
+  #contact form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
