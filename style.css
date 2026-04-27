@@ -1173,10 +1173,19 @@ footer .footer_comercial {
 .projects_armazenamento ul li a {
     display: block;
     outline: none;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
 }
 
 .projects_armazenamento ul li a img {
     display: block;
-    border: none;
+    border: none !important;
     outline: none;
+    width: 100%;
+}
+
+.projects_armazenamento ul li {
+    overflow: hidden;
 }
