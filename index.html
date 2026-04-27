@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Portfólio de Julia de Souza Amancio — desenvolvedora em formação, especialista em Python, automações e desenvolvimento web. Porto Real, RJ.">
+    <meta name="description" content="Portfólio de Julia de Souza Amancio — desenvolvedora em formação, com foco em Python, desenvolvimento web, lógica de programação e automoções. Porto Real, RJ.">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
@@ -126,7 +126,7 @@
                         <div style="position:relative;">
                             <span>2025</span>
                             <h3>Jogos em Python</h3>
-                            <p>Desenvolvimento de quatro jogos no terminal: Quiz Game, Number Guesser, Rock Paper Scissors e Choose Your Own Adventure. Praticou lógica, funções e estruturas de controle.</p>
+                            <p>Desenvolvimento de jogos no terminal: Quiz Game, Number Guesser, Rock Paper Scissors e Choose Your Own Adventure. Praticou lógica, funções e estruturas de controle.</p>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
                     <ul>
                         <li>
                             <i class="fas fa-project-diagram"></i>
-                            <span>6</span>
+                            <span>7</span>
                             <p>Projetos</p>
                         </li>
                         <li>
@@ -229,122 +229,283 @@
             </div>
         </div>
  
-        <div class="project_navegacao">
-            <ul class="project_navegacao">
-                <li class="all ativo">All</li>
-                <li class="python">Python</li>
-                <li class="web">Web</li>
-                <li class="bot">Bot</li>
-            </ul>
-        </div>
- 
-        <div class="projects_armazenamento">
-            <ul>
-                <li class="python">
-            <a href="img/quiz_game.png" target="_blank">
-        <img src="img/quiz_game.png" alt="Quiz Game">
-    </a>
-</li>
+        <title>Projetos - Preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: sans-serif; padding: 40px 20px; }
 
-                <li class="python">
-            <a href="img/number_guesser.png" target="_blank">
-        <img src="img/number_guesser.png" alt="Number Guesser">
-    </a>
-</li>
+  /* Filtros */
+  .filter-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .filter-btn {
+    background: transparent; border: 1px solid #333; color: #aaa;
+    padding: 8px 22px; border-radius: 4px; cursor: pointer;
+    font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .filter-btn.active, .filter-btn:hover { background: #dc3545; color: #fff; border-color: #dc3545; }
 
-                <li class="python">
-            <a href="img/rock_paper_scissors.png" target="_blank">
-        <img src="img/rock_paper_scissors.png" alt="Pedra Papel Tesoura">
-    </a>
-</li>
+  /* Grid de projetos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px; max-width: 1100px; margin: 0 auto;
+  }
 
-                <li class="python">
-            <a href="img/choose_your_own_adventure.png" target="_blank">
-        <img src="img/choose_your_own_adventure.png" alt="Choose Your Own Adventure">
-    </a>
-</li>
+  .project-card {
+    background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px;
+    overflow: hidden; transition: transform 0.2s, border-color 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .project-card:hover { transform: translateY(-4px); border-color: #444; }
+  .project-card.destaque { border-color: #dc3545; }
 
-                <li class="web">
-            <a href="img/portfolio.png" target="_blank">
-        <img src="img/portfolio.png" alt="Portfólio Pessoal">
-    </a>
-</li>
+  /* Imagem com zoom ao clicar */
+  .project-thumb {
+    position: relative; overflow: hidden; cursor: zoom-in;
+    height: 160px; background: #0d0d0d;
+  }
+  .project-thumb img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .project-thumb:hover img { transform: scale(1.05); }
+  .zoom-icon {
+    position: absolute; bottom: 8px; right: 8px;
+    background: rgba(0,0,0,0.6); color: #fff;
+    font-size: 0.7rem; padding: 3px 7px; border-radius: 4px;
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .project-thumb:hover .zoom-icon { opacity: 1; }
 
-                <li class="bot">
-            <a href="img/bot_discord.png" target="_blank">
-        <img src="img/bot_discord.png" alt="Incentivo Bot Discord">
-    </a>
-</li>
-            </ul>
-        </div>
- 
-        <a href="https://github.com/najuiamnc" target="_blank">Ver no GitHub</a>
- 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;width:100%;margin-top:20px;">
- 
-            <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:24px;">
-                <span style="font-size:1.8rem;">🎮</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Quiz Game</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Jogo de perguntas e respostas no terminal. Pratica a lógica de programação e estruturas de controle em Python.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Python</span>
-                </div>
-            </div>
- 
-            <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:24px;">
-                <span style="font-size:1.8rem;">🔢</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Number Guesser</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Jogo de adivinhar números. Explorando algoritmos, condicionais e loops na prática.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Python</span>
-                </div>
-            </div>
- 
-            <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:24px;">
-                <span style="font-size:1.8rem;">✂️</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Rock Paper Scissors</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Pedra, papel e tesoura contra o computador. Pratica a lógica de jogo e organização de funções.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Python</span>
-                </div>
-            </div>
- 
-            <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:24px;">
-                <span style="font-size:1.8rem;">🗺️</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Choose Your Own Adventure</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Jogo de aventura baseado em escolhas do jogador. Trabalha as estruturas de decisão e criatividade na narrativa.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Python</span>
-                </div>
-            </div>
- 
-            <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:24px;">
-                <span style="font-size:1.8rem;">🌐</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Portfólio Pessoal</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Este site! Construído do zero com HTML, CSS e JavaScript puro. Inclui animações, menu responsivo e filtro de projetos.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">HTML</span>
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">CSS</span>
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">JavaScript</span>
-                </div>
-            </div>
- 
-            <div style="background:#1a1a1a;border:1px solid #dc3545;border-radius:8px;padding:24px;position:relative;">
-                <span style="position:absolute;top:16px;right:16px;background:#dc3545;color:#fff;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:20px;">Destaque</span>
-                <span style="font-size:1.8rem;">💜</span>
-                <h3 style="color:#fff;margin:10px 0 6px;font-size:1rem;">Incentivo Bot</h3>
-                <p style="color:#707070;font-size:0.85rem;line-height:1.6;">Bot de apoio emocional para Discord. Monitora o chat e, ao identificar palavras de desânimo, envia mensagens de encorajamento automaticamente. Hospedado na nuvem com Uptime Robot.</p>
-                <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap;">
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Python</span>
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Discord.py</span>
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Flask</span>
-                    <span style="background:#222;color:#dc3545;font-size:0.7rem;padding:2px 8px;border-radius:20px;border:1px solid #333;">Nuvem</span>
-                </div>
-            </div>
- 
-        </div>
-    </section>
- 
+  /* Conteúdo do card */
+  .card-body { padding: 18px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .card-emoji { font-size: 1.6rem; }
+  .badge-destaque {
+    align-self: flex-start; background: #dc3545; color: #fff;
+    font-size: 0.65rem; font-weight: 700; padding: 2px 8px;
+    border-radius: 20px;
+  }
+  .card-title { color: #fff; font-size: 1rem; }
+  .card-desc { color: #707070; font-size: 0.83rem; line-height: 1.6; flex: 1; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag {
+    background: #222; color: #dc3545; font-size: 0.7rem;
+    padding: 2px 8px; border-radius: 20px; border: 1px solid #333;
+  }
+  .btn-github {
+    display: inline-block; margin-top: 14px;
+    background: transparent; border: 1px solid #dc3545; color: #dc3545;
+    padding: 7px 16px; border-radius: 4px; font-size: 0.8rem;
+    text-decoration: none; text-align: center;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-github:hover { background: #dc3545; color: #fff; }
+
+  /* === LIGHTBOX === */
+  #lightbox {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.92); z-index: 9999;
+    justify-content: center; align-items: center;
+    cursor: zoom-out;
+  }
+  #lightbox.open { display: flex; }
+  #lightbox img {
+    max-width: 90vw; max-height: 88vh;
+    border-radius: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    animation: fadeIn 0.2s ease;
+  }
+  #lightbox-close {
+    position: fixed; top: 18px; right: 24px;
+    color: #fff; font-size: 2rem; cursor: pointer;
+    background: none; border: none; line-height: 1;
+  }
+  @keyframes fadeIn { from { opacity:0; transform: scale(0.95); } to { opacity:1; transform: scale(1); } }
+
+  /* Esconde cards filtrados */
+  .project-card.hidden { display: none; }
+</style>
+</head>
+<body>
+
+<!-- FILTROS -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">ALL</button>
+  <button class="filter-btn" data-filter="python">PYTHON</button>
+  <button class="filter-btn" data-filter="web">WEB</button>
+  <button class="filter-btn" data-filter="bot">BOT</button>
+  <button class="filter-btn" data-filter="dados">DADOS</button>
+</div>
+
+<!-- GRID DE PROJETOS -->
+<div class="projects-grid">
+
+  <!-- Quiz Game -->
+  <div class="project-card" data-category="python">
+    <div class="project-thumb" onclick="openLightbox('img/quiz_game.png')">
+      <img src="img/quiz_game.png" alt="Quiz Game">
+      <span class="zoom-icon">🔍 ampliar</span>
+    </div>
+    <div class="card-body">
+      <span class="card-emoji">🎮</span>
+      <h3 class="card-title">Quiz Game</h3>
+      <p class="card-desc">Jogo de perguntas e respostas no terminal. Pratica a lógica de programação e estruturas de controle em Python.</p>
+      <div class="tags"><span class="tag">Python</span></div>
+      <a href="https://github.com/najuiamnc/Quiz_Game" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Number Guesser -->
+  <div class="project-card" data-category="python">
+    <div class="project-thumb" onclick="openLightbox('img/number_guesser.png')">
+      <img src="img/number_guesser.png" alt="Number Guesser">
+      <span class="zoom-icon">🔍 ampliar</span>
+    </div>
+    <div class="card-body">
+      <span class="card-emoji">🔢</span>
+      <h3 class="card-title">Number Guesser</h3>
+      <p class="card-desc">Jogo de adivinhar números. Explorando algoritmos, condicionais e loops na prática.</p>
+      <div class="tags"><span class="tag">Python</span></div>
+      <a href="https://github.com/najuiamnc/portfolio-python-projects/blob/main/number_guesser.py" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Rock Paper Scissors -->
+  <div class="project-card" data-category="python">
+    <div class="project-thumb" onclick="openLightbox('img/rock_paper_scissors.png')">
+      <img src="img/rock_paper_scissors.png" alt="Pedra Papel Tesoura">
+      <span class="zoom-icon">🔍 ampliar</span>
+    </div>
+    <div class="card-body">
+      <span class="card-emoji">✂️</span>
+      <h3 class="card-title">Rock Paper Scissors</h3>
+      <p class="card-desc">Pedra, papel e tesoura contra o computador. Pratica a lógica de jogo e organização de funções.</p>
+      <div class="tags"><span class="tag">Python</span></div>
+      <a href="https://github.com/najuiamnc/portfolio-python-projects/blob/main/rock_paper_scissors.py" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Choose Your Own Adventure -->
+  <div class="project-card" data-category="python">
+    <div class="project-thumb" onclick="openLightbox('img/choose_your_own_adventure.png')">
+      <img src="img/choose_your_own_adventure.png" alt="Choose Your Own Adventure">
+      <span class="zoom-icon">🔍 ampliar</span>
+    </div>
+    <div class="card-body">
+      <span class="card-emoji">🗺️</span>
+      <h3 class="card-title">Choose Your Own Adventure</h3>
+      <p class="card-desc">Jogo de aventura baseado em escolhas do jogador. Trabalha as estruturas de decisão e criatividade na narrativa.</p>
+      <div class="tags"><span class="tag">Python</span></div>
+      <a href="https://github.com/najuiamnc/portfolio-python-projects/blob/main/choose_your_own_adventure.py" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Portfólio Pessoal -->
+  <div class="project-card" data-category="web">
+    <div class="project-thumb" onclick="openLightbox('img/portfolio.png')">
+      <img src="img/portfolio.png" alt="Portfólio Pessoal">
+      <span class="zoom-icon">🔍 ampliar</span>
+    </div>
+    <div class="card-body">
+      <span class="card-emoji">🌐</span>
+      <h3 class="card-title">Portfólio Pessoal</h3>
+      <p class="card-desc">Este site! Construído do zero com HTML, CSS e JavaScript puro. Inclui animações, menu responsivo e filtro de projetos.</p>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+      <a href="https://github.com/najuiamnc/portfolio-pessoal" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+    </div>
+  </div>
+
+  <!-- Incentivo Bot -->
+<div class="project-card destaque" data-category="bot">
+  <div class="project-thumb" onclick="openLightbox('img/bot_discord.png')">
+    <img src="img/bot_discord.png" alt="Incentivo Bot Discord">
+    <span class="zoom-icon">🔍 ampliar</span>
+  </div>
+  <div class="card-body">
+    <span class="badge-destaque">Destaque</span>
+    <span class="card-emoji">💜</span>
+    <h3 class="card-title">Incentivo Bot</h3>
+    <p class="card-desc">Bot de apoio emocional para Discord. Monitora o chat e, ao identificar palavras de desânimo, envia mensagens de encorajamento automaticamente. Hospedado na nuvem com Uptime Robot.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Discord.py</span>
+      <span class="tag">Flask</span>
+      <span class="tag">Nuvem</span>
+    </div>
+    <a href="https://github.com/najuiamnc/Incentivo-Bot" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+  </div>
+</div>
+
+<!-- Dashboard de Análise de Dados -->
+<div class="project-card destaque" data-category="dados">
+  <div class="project-thumb" onclick="openLightbox('img/dashboard.png')">
+    <img src="img/dashboard.png" alt="Dashboard de Análise de Dados">
+    <span class="zoom-icon">🔍 ampliar</span>
+  </div>
+  <div class="card-body">
+    <span class="badge-destaque">Destaque</span>
+    <span class="card-emoji">📊</span>
+    <h3 class="card-title">Dashboard de Análise de Dados</h3>
+    <p class="card-desc">Relatório de testes por mês com pandas e matplotlib. Calcula taxa de aprovação, exibe tabela no terminal e gera gráfico visual dos dados.</p>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Matplotlib</span>
+    </div>
+    <a href="https://github.com/najuiamnc/analise-dados-python" target="_blank" rel="noopener" class="btn-github">Ver no GitHub ↗</a>
+  </div>
+</div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  // === FILTRO ===
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('hidden', !match);
+      });
+    });
+  });
+
+  // === LIGHTBOX ===
+  function openLightbox(src) {
+    const lb = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>
     <!-- PRICING -->
     <section id="pricing" style="padding:60px;background:#111;color:#fff;text-align:center;">
         <div class="sobre_titulo" style="margin-bottom:40px;">
@@ -355,7 +516,7 @@
         <div style="display:flex;gap:30px;justify-content:center;flex-wrap:wrap;">
             <div style="background:#222;border-radius:8px;padding:40px 30px;max-width:280px;border:1px solid #333;">
                 <h3 style="color:#dc3545;font-size:1.5rem;margin-bottom:10px;">Básico</h3>
-                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$150</p>
+                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$149,99</p>
                 <p style="color:#707070;margin-bottom:20px;">Landing page simples e responsiva</p>
                 <ul style="color:#707070;text-align:left;display:grid;gap:10px;">
                     <li>✔ 1 página</li>
@@ -366,7 +527,7 @@
             </div>
             <div style="background:#dc3545;border-radius:8px;padding:40px 30px;max-width:280px;">
                 <h3 style="color:#fff;font-size:1.5rem;margin-bottom:10px;">Profissional</h3>
-                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$400</p>
+                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$399,99</p>
                 <p style="color:#ffcdd2;margin-bottom:20px;">Site completo com múltiplas páginas</p>
                 <ul style="color:#ffcdd2;text-align:left;display:grid;gap:10px;">
                     <li>✔ Até 5 páginas</li>
@@ -377,7 +538,7 @@
             </div>
             <div style="background:#222;border-radius:8px;padding:40px 30px;max-width:280px;border:1px solid #333;">
                 <h3 style="color:#dc3545;font-size:1.5rem;margin-bottom:10px;">Automação</h3>
-                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$200</p>
+                <p style="font-size:2.5rem;font-weight:bold;margin:15px 0;">R$199,99</p>
                 <p style="color:#707070;margin-bottom:20px;">Scripts e bots personalizados em Python</p>
                 <ul style="color:#707070;text-align:left;display:grid;gap:10px;">
                     <li>✔ Bot Discord / Telegram</li>
