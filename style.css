@@ -788,6 +788,26 @@ main .sobre {
     font-weight: bold;
 }
 
+.project_navegacao ul li {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #707070;
+    padding: 6px 20px;
+    transition: .3s;
+}
+
+.project_navegacao ul li.ativo {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: 700;
+}
+
 
 .projects_armazenamento ul {
     display: grid;
