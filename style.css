@@ -1189,3 +1189,13 @@ footer .footer_comercial {
 .projects_armazenamento ul li {
     overflow: hidden;
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+body {
+    padding-top: 60px;
+}
