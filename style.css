@@ -345,7 +345,7 @@ main .sobre {
 }
 
 
-/* SEÇÃO SERVICES */
+/* SEÇÃO de SERVICES */
 
 .services {
     margin-top: -30px;
@@ -533,7 +533,7 @@ main .sobre {
     color: #3e3d3d;
 }
 
-/* MEUS DIPROMAS E CURSOS */
+/* MEUS DIPLOMAS E CURSOS */
 
 .resume_gerenico .education_content div {
     animation: sobeSecao .5s ease-in-out forwards;
@@ -1035,7 +1035,7 @@ footer .footer_comercial {
     word-break: break-all;
   }
 
-  /* SERVICES — 1 coluna, card ocupa largura toda */
+  /* SERVICES — 1 coluna, o card ocupa largura toda */
   .services {
     padding: 20px 15px;
     margin-top: 0;
@@ -1073,7 +1073,7 @@ footer .footer_comercial {
     text-align: center;
   }
 
-  /* SKILLS E FUN FACTS */
+  /* SKILLS E FUN FACTS ;o */
   .cursos {
     grid-template-columns: 1fr;
     padding: 15px;
@@ -1120,7 +1120,7 @@ footer .footer_comercial {
     font-size: 1.2rem;
   }
 
-  /* PROJETOS — 2 colunas em vez de 4 */
+  /* PROJETOS — 2 colunas em vez de 4 :3 */
   .projects {
     padding: 20px 15px;
   }
@@ -1226,7 +1226,7 @@ header {
   transform: none;
 }
 
-/* Reset básico para mobile (mantido do seu snippet) */
+/* Reset básico para mobile */
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr !important; padding: 0 15px; }
   .filter-buttons { padding: 0 15px; justify-content: flex-start; }
